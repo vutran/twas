@@ -18,12 +18,21 @@ describe('twas', () => {
         expect(Date.now()).toBe(NOW);
     });
 
+    it('should be "just now"', () => {
+        expect(twas(NOW)).toBe('just now');
+        expect(twas(NOW - 1)).toBe('just now');
+    });
+
     it('should be "5 seconds ago"', () => {
         expect(twas(NOW - 5 * SECONDS)).toBe('5 seconds ago');
     });
 
     it('should be "32 seconds ago"', () => {
         expect(twas(NOW - 32 * SECONDS)).toBe('32 seconds ago');
+    });
+
+    it('should be "1 minute ago"', () => {
+        expect(twas(NOW - 1 * MINUTES)).toBe('1 minute ago');
     });
 
     it('should be "5 minutes ago"', () => {

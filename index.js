@@ -1,5 +1,5 @@
 const is = (interval, cycle) =>
-    cycle > interval ? Math.floor(cycle / interval) : 0;
+    cycle >= interval ? Math.floor(cycle / interval) : 0;
 
 module.exports = (time, now) => {
     if (!now) {
@@ -14,30 +14,32 @@ module.exports = (time, now) => {
     const years = is(12, months);
 
     let amt = years;
-    let cycle = 'years';
+    let cycle = 'year';
 
-    if (years > 0) {
+    if (secs <= 1) {
+        return 'just now';
+    } else if (years > 0) {
         amt = years;
-        cycle = 'years';
+        cycle = 'year';
     } else if (months > 0) {
         amt = months;
-        cycle = 'months';
+        cycle = 'month';
     } else if (weeks > 0) {
         amt = weeks;
-        cycle = 'weeks';
+        cycle = 'week';
     } else if (days > 0) {
         amt = days;
-        cycle = 'days';
+        cycle = 'day';
     } else if (hours > 0) {
         amt = hours;
-        cycle = 'hours';
+        cycle = 'hour';
     } else if (mins > 0) {
         amt = mins;
-        cycle = 'minutes';
+        cycle = 'minute';
     } else if (secs > 0) {
         amt = secs;
-        cycle = 'seconds';
+        cycle = 'second';
     }
 
-    return `${amt} ${cycle} ago`;
-}
+    return `${amt} ${cycle}${amt > 1 ? 's' : ''} ago`;
+};
