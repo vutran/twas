@@ -6,6 +6,10 @@
   "files": [
     "index.js"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vutran/twas.git"
+  },
   "dependencies": {
     "jest": "^22.1.4"
   },
