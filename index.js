@@ -41,5 +41,7 @@ module.exports = (time, now) => {
         cycle = 'second';
     }
 
-    return `${Math.floor(amt)} ${cycle}${amt > 1 ? 's' : ''} ago`;
+    const v = Math.floor(amt);
+
+    return `${v} ${cycle}${v > 1 ? 's' : ''} ago`;
 };
