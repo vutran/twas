@@ -4,7 +4,8 @@
   "description": "Generate time ago string",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",

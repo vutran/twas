@@ -1,8 +1,10 @@
 const is = (interval, cycle) =>
     cycle > interval ? Math.floor(cycle / interval) : 0;
 
-module.exports = time => {
-    const now = Date.now();
+module.exports = (time, now) => {
+    if (!now) {
+        now = Date.now();
+    }
     const secs = (now - time) / 1000;
     const mins = is(60, secs);
     const hours = is(60, mins);
@@ -38,4 +40,4 @@ module.exports = time => {
     }
 
     return `${amt} ${cycle} ago`;
-};
+}

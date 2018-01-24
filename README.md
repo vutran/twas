@@ -11,7 +11,7 @@ $ npm i -S twas
 ## Usage
 
 ```
-const twas = require('twas');
+import twas from 'twas';
 
 console.log(twas(Date.now() - (5 * 1000));
 // -> 5 seconds ago
