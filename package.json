@@ -1,0 +1,31 @@
+{
+  "name": "twas",
+  "version": "0.0.0",
+  "description": "Generate time ago string",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "jest": "^22.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "jest": "jest --coverage",
+    "test": "npm run jest"
+  },
+  "keywords": [
+    "timeago",
+    "time-ago",
+    "time ago",
+    "time",
+    "date",
+    "from-now",
+    "fromnow",
+    "from now",
+    "relative",
+    "moment"
+  ],
+  "author": "Vu Tran",
+  "license": "MIT"
+}
