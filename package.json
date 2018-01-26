@@ -11,10 +11,10 @@
     "type": "git",
     "url": "git@github.com:vutran/twas.git"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^22.1.4"
   },
-  "devDependencies": {},
   "scripts": {
     "jest": "jest --coverage",
     "test": "npm run jest"
@@ -31,6 +31,6 @@
     "relative",
     "moment"
   ],
-  "author": "Vu Tran",
+  "author": "Vu Tran <vu@vu-tran.com>",
   "license": "MIT"
 }
