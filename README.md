@@ -10,10 +10,11 @@ $ npm i -S twas
 
 ## Usage
 
-```
+```js
 import twas from 'twas';
 
 console.log(twas(Date.now() - (5 * 1000));
+
 // -> 5 seconds ago
 ```
 
