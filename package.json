@@ -13,6 +13,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "jest": "^22.1.4"
   },
   "scripts": {
