@@ -13,6 +13,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1",
     "coveralls": "^3.0.0",
     "jest": "^22.1.4"
   },
@@ -33,5 +35,10 @@
     "moment"
   ],
   "author": "Vu Tran <vu@vu-tran.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
 }
