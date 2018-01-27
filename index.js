@@ -1,7 +1,7 @@
 const is = (interval, cycle) =>
     cycle >= interval ? Math.floor(cycle / interval) : 0;
 
-module.exports = (time, now) => {
+export default function(time, now) {
     if (!now) {
         now = Date.now();
     }

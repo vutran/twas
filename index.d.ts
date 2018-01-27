@@ -1,4 +1,3 @@
 declare module 'twas' {
-  let twas: (time: number, now?: number) => string;
-  export = twas;
+  export default function(time: number, now?: number): string;
 }

@@ -1,4 +1,4 @@
-const twas = require('../');
+import twas from '../';
 
 describe('twas', () => {
     // now -- 2018-01-24T17:51:30+00:00 (ISO 8601)
