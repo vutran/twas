@@ -15,8 +15,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "coveralls": "^3.0.0",
-    "jest": "^22.1.4",
+    "coveralls": "^3.0.1",
+    "jest": "^22.4.3",
     "microbundle": "^0.4.3"
   },
   "scripts": {
