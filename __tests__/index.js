@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 const twas = require('../dist');
 
 describe('twas', () => {
