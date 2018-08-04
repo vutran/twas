@@ -1,6 +1,6 @@
 {
   "name": "twas",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Generate time ago string",
   "umd:main": "dist/index.min.js",
   "module": "dist/index.es.js",
