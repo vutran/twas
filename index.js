@@ -43,5 +43,5 @@ export default function(time, now) {
 
     const v = Math.floor(amt);
 
-    return `${v} ${cycle}${v > 1 ? 's' : ''} ago`;
+    return `${v === 1 ? 'a' : v} ${cycle}${v > 1 ? 's' : ''} ago`;
 };
