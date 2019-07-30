@@ -35,8 +35,8 @@ describe('twas', () => {
         expect(twas(NOW - 32 * SECONDS)).toBe('32 seconds ago');
     });
 
-    it('should be "1 minute ago"', () => {
-        expect(twas(NOW - 1 * MINUTES)).toBe('1 minute ago');
+    it('should be "a minute ago"', () => {
+        expect(twas(NOW - 1 * MINUTES)).toBe('a minute ago');
     });
 
     it('should be "5 minutes ago"', () => {
@@ -45,6 +45,10 @@ describe('twas', () => {
 
     it('should be "15 minutes ago"', () => {
         expect(twas(NOW - 15 * MINUTES)).toBe('15 minutes ago');
+    });
+
+    it('should be "an hour ago"', () => {
+        expect(twas(NOW - 1 * HOURS)).toBe('an hour ago');
     });
 
     it('should be "2 hours ago"', () => {
