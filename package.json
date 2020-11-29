@@ -6,8 +6,7 @@
   "module": "dist/index.es.js",
   "main": "dist/index.js",
   "engines": {
-    "node": ">=8.9.3",
-    "npm": "~5.5.1"
+    "node": ">=8.9.3"
   },
   "files": [
     "dist",
