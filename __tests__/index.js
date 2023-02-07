@@ -70,6 +70,10 @@ describe('twas', () => {
     it('should be "6 years ago"', () => {
         expect(twas(NOW - 6 * YEARS)).toBe('6 years ago');
     });
+  
+    it('should be "7 years ago"', () => {
+        expect(twas(NOW - 6 * YEARS - 11 * MONTHS)).toBe('7 years ago');
+    });
 
     it('should be 10 seconds ago', () => {
         const n = 1514764800; // Monday, January 1, 2018 12:00:00 AM
