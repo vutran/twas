@@ -1,6 +1,6 @@
 # twas
 
-[![Travis](https://img.shields.io/travis/vutran/twas/master.svg?maxAge=2592000&style=flat-square)](https://travis-ci.org/vutran/twas) [![Coveralls branch](https://img.shields.io/coveralls/vutran/twas/master.svg?maxAge=2592000&style=flat-square)](https://coveralls.io/github/vutran/twas) [![license](https://img.shields.io/github/license/vutran/twas.svg?maxAge=2592000&style=flat-square)](LICENSE)
+[![Coveralls branch](https://img.shields.io/coveralls/vutran/twas/master.svg?maxAge=2592000&style=flat-square)](https://coveralls.io/github/vutran/twas) [![license](https://img.shields.io/github/license/vutran/twas.svg?maxAge=2592000&style=flat-square)](LICENSE)
 
 > Tiny (280B) relative time string function (eg: "3 seconds ago")
 
