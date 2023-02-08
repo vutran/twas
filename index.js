@@ -1,5 +1,5 @@
 const is = (interval, cycle) =>
-    cycle >= interval ? Math.floor(cycle / interval) : 0;
+    cycle >= interval ? Math.round(cycle / interval) : 0;
 
 export default function(time, now) {
     if (!now) {
@@ -41,7 +41,7 @@ export default function(time, now) {
         cycle = 'second';
     }
 
-    const v = Math.floor(amt);
+    const v = Math.round(amt);
 
     return `${v === 1 ? (amt === hours ? 'an' : 'a') : v} ${cycle}${v > 1 ? 's' : ''} ago`;
 };
